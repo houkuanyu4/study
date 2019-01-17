@@ -13,10 +13,14 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     <style>
-        .thumbnail{
-            background-color:#f00;
+        .thumbnail {
+            background-color: #faf;
         }
-        </style>
+        
+        .thumbnail .caption h2 {
+            color: firebrick;
+        }
+    </style>
 </head>
 
 <body>
@@ -72,14 +76,59 @@
     </nav>
 
 
+    <div id="carousel-id" class="carousel slide" data-ride="carousel">
+        <!-- 幻燈片小圓點區 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+        </ol>
+        <!-- 幻燈片主圖區 -->
+        <div class="carousel-inner">
+            <div class="item">
+                <img src="https://picsum.photos/2700/800/?random=1">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>CSS可樂好喝超爽快</h1>
+                        <p>你喝過了嗎？</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/2700/800/?random=2">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>CSS可樂的外掛真方便</h1>
+                        <p>你安裝了嗎？</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">更多</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item active">
+                <img src="https://picsum.photos/2700/800/?random=3">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>我是標題喔～自己改文案吧</h1>
+                        <p>我是內文喔，你可以把字打在這裡呦</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">詳細內容</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 上下頁控制區 -->
+        <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+
+
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-3">
                 <div class="thumbnail">
-                    <img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+                    <img src="https://picsum.photos/200/200/?random=1">
                     <div class="caption">
-                        <h2>資二1 侯冠佑
-                        </h2>
+                        <h2>資二1 侯冠佑 8號</h2>
                         <p>內文</p>
                         <p>
                             <a href="#" class="btn btn-info">加入購物車</a>
@@ -90,20 +139,7 @@
             </div>
             <div class="col-xs-12 col-sm-3">
                 <div class="thumbnail">
-                    <img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
-                    <div class="caption">
-                        <h2>標題</h2>
-                        <p>內文</p>
-                        <p>
-                            <a href="#" class="btn btn-info">加入購物車</a>
-                            <a href="#" class="btn btn-default">下次再買</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-                <div class="thumbnail">
-                    <img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+                    <img src="https://picsum.photos/200/200/?random=5">
                     <div class="caption">
                         <h2>標題</h2>
                         <p>內文</p>
@@ -116,7 +152,20 @@
             </div>
             <div class="col-xs-12 col-sm-3">
                 <div class="thumbnail">
-                    <img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+                    <img src="https://picsum.photos/200/200/?random=6">
+                    <div class="caption">
+                        <h2>標題</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=7">
                     <div class="caption">
                         <h2>標題</h2>
                         <p>內文</p>
@@ -130,6 +179,63 @@
         </div>
     </div>
 
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=1">
+                    <div class="caption">
+                        <h2>資二1 侯冠佑 8號</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=5">
+                    <div class="caption">
+                        <h2>標題</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=6">
+                    <div class="caption">
+                        <h2>標題</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=7">
+                    <div class="caption">
+                        <h2>標題</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
