@@ -8,19 +8,60 @@
     <title>Title Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
     <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+        .thumbnail .caption h2 {
+            font-family: 'cwTeXFangSong', serif;
+            /* Google 思源宋體 */
+            /* font-family: 'cwTeXFangSong', serif;*/
+            color: #000;
+        }
+        
+        .thumbnail .caption p {
+            /* Google 思源楷體 */
+            /* font-family: 'cwTeXKai', serif;*/
+            font-family: 'cwTeXKai', serif, justify;
+            font-size: 20px;
+        }
+        
         .thumbnail {
             background-color: #faf;
         }
         
-        .thumbnail .caption h2 {
-            color: firebrick;
+        .carousel-inner {
+            font-size: 30px;
+            font-family: 'cwTeXMing', serif;
+            /* Google 思源明體 */
+            /* font-family: 'cwTeXMing', serif;*/
+        }
+        
+        .thumbnail img {
+            width: 100%;
+        }
+        
+        .slide {
+            margin-bottom: 50px;
+        }
+        
+        .thumbnail .caption p a {
+            font-size: 20px;
+        }
+        
+        .bgc666 {
+            background-color: #777;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-bottom: 30px;
         }
     </style>
+
+
 </head>
 
 <body>
@@ -87,18 +128,22 @@
         <div class="carousel-inner">
             <div class="item">
                 <img src="https://picsum.photos/2700/800/?random=1">
-                <div class="container">
-                    <div class="carousel-caption">
+
+                <div class="col-sm-5 ">
+                    <div class="carousel-caption bgc666">
                         <h1>CSS可樂好喝超爽快</h1>
                         <p>你喝過了嗎？</p>
                         <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
                     </div>
+
+
                 </div>
             </div>
             <div class="item">
                 <img src="https://picsum.photos/2700/800/?random=2">
-                <div class="container">
-                    <div class="carousel-caption">
+
+                <div class="col-sm-5 ">
+                    <div class="carousel-caption bgc666">
                         <h1>CSS可樂的外掛真方便</h1>
                         <p>你安裝了嗎？</p>
                         <p><a class="btn btn-lg btn-primary" href="#" role="button">更多</a></p>
@@ -107,8 +152,9 @@
             </div>
             <div class="item active">
                 <img src="https://picsum.photos/2700/800/?random=3">
-                <div class="container">
-                    <div class="carousel-caption">
+
+                <div class="col-sm-5 ">
+                    <div class="carousel-caption bgc666">
                         <h1>我是標題喔～自己改文案吧</h1>
                         <p>我是內文喔，你可以把字打在這裡呦</p>
                         <p><a class="btn btn-lg btn-primary" href="#" role="button">詳細內容</a></p>
@@ -124,124 +170,130 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-3">
-                <div class="thumbnail">
-                    <img src="https://picsum.photos/200/200/?random=1">
-                    <div class="caption">
-                        <h2>資二1 侯冠佑 8號</h2>
-                        <p>內文</p>
-                        <p>
-                            <a href="#" class="btn btn-info">加入購物車</a>
-                            <a href="#" class="btn btn-default">下次再買</a>
-                        </p>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+
+                        <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                            <!-- 區塊1 -->
+                            <div class="panel panel-info">
+                                <div class="panel-heading" role="tab" id="panel1">
+                                    <h4 class="panel-title">
+                                        <a href="#aaa" data-parent="#accordion2" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="aaa">
+          收合項目標題一
+        </a>
+                                    </h4>
+                                </div>
+                                <div id="aaa" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="panel1">
+                                    <div class="panel-body">
+                                        內容一置入在這裡
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 區塊2 -->
+                            <div class="panel panel-primary">
+                                <div class="panel-heading" role="tab" id="panel2">
+                                    <h4 class="panel-title">
+                                        <a href="#bbb" data-parent="#accordion2" data-toggle="collapse" role="button" class="collapsed" aria-expanded="false" aria-controls="bbb">
+          收合項目標題二
+        </a>
+                                    </h4>
+                                </div>
+                                <div id="bbb" class="panel-collapse collapse" role="tabpanel" aria-labelledby="panel2">
+                                    <div class="panel-body">
+                                        內容二置入在這裡
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 區塊3 -->
+                            <div class="panel panel-success">
+                                <div class="panel-heading" role="tab" id="panel3">
+                                    <h4 class="panel-title">
+                                        <a href="#ccc" data-parent="#accordion2" data-toggle="collapse" role="button" class="collapsed" aria-expanded="false" aria-controls="ccc">
+          收合項目標題三
+        </a>
+                                    </h4>
+                                </div>
+                                <div id="ccc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="panel3">
+                                    <div class="panel-body">
+                                        內容三置入在這裡
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-12 col-sm-9">
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/200/200/?random=4">
+                                <div class="caption">
+                                    <h2>資二1 侯冠佑 8號</h2>
+                                    <p>內文</p>
+                                    <p>
+                                        <a href="#" class="btn btn-success fa fa-shopping-cart fa-5x"> 加入購物車</a>
+                                        <a href="#" class="btn btn-default">下次再買</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/200/200/?random=5">
+                                <div class="caption">
+                                    <h2>標題</h2>
+                                    <p>內文</p>
+                                    <p>
+                                        <a href="#" class="btn btn-danger fa fa-shopping-cart fa-5x"> 加入購物車</a>
+                                        <a href="#" class="btn btn-default">下次再買</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/200/200/?random=6">
+                                <div class="caption">
+                                    <h2>標題</h2>
+                                    <p>內文</p>
+                                    <p>
+                                        <a href="#" class="btn btn-warning fa fa-shopping-cart fa-5x"> 加入購物車</a>
+                                        <a href="#" class="btn btn-default">下次再買</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/200/200/?random=7">
+                                <div class="caption">
+                                    <h2>標題</h2>
+                                    <p>內文
+
+                                    </p>
+                                    <p>
+                                        <a href="#" class="btn btn-info fa fa-shopping-cart fa-5x"> 加入購物車</a>
+                                        <a href="#" class="btn btn-default">下次再買</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- Row -->
             </div>
-            <div class="col-xs-12 col-sm-3">
-                <div class="thumbnail">
-                    <img src="https://picsum.photos/200/200/?random=5">
-                    <div class="caption">
-                        <h2>標題</h2>
-                        <p>內文</p>
-                        <p>
-                            <a href="#" class="btn btn-info">加入購物車</a>
-                            <a href="#" class="btn btn-default">下次再買</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-                <div class="thumbnail">
-                    <img src="https://picsum.photos/200/200/?random=6">
-                    <div class="caption">
-                        <h2>標題</h2>
-                        <p>內文</p>
-                        <p>
-                            <a href="#" class="btn btn-info">加入購物車</a>
-                            <a href="#" class="btn btn-default">下次再買</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-                <div class="thumbnail">
-                    <img src="https://picsum.photos/200/200/?random=7">
-                    <div class="caption">
-                        <h2>標題</h2>
-                        <p>內文</p>
-                        <p>
-                            <a href="#" class="btn btn-info">加入購物車</a>
-                            <a href="#" class="btn btn-default">下次再買</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <!--Container -->
+
         </div>
     </div>
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-3">
-                <div class="thumbnail">
-                    <img src="https://picsum.photos/200/200/?random=1">
-                    <div class="caption">
-                        <h2>資二1 侯冠佑 8號</h2>
-                        <p>內文</p>
-                        <p>
-                            <a href="#" class="btn btn-info">加入購物車</a>
-                            <a href="#" class="btn btn-default">下次再買</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-                <div class="thumbnail">
-                    <img src="https://picsum.photos/200/200/?random=5">
-                    <div class="caption">
-                        <h2>標題</h2>
-                        <p>內文</p>
-                        <p>
-                            <a href="#" class="btn btn-info">加入購物車</a>
-                            <a href="#" class="btn btn-default">下次再買</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-                <div class="thumbnail">
-                    <img src="https://picsum.photos/200/200/?random=6">
-                    <div class="caption">
-                        <h2>標題</h2>
-                        <p>內文</p>
-                        <p>
-                            <a href="#" class="btn btn-info">加入購物車</a>
-                            <a href="#" class="btn btn-default">下次再買</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-                <div class="thumbnail">
-                    <img src="https://picsum.photos/200/200/?random=7">
-                    <div class="caption">
-                        <h2>標題</h2>
-                        <p>內文</p>
-                        <p>
-                            <a href="#" class="btn btn-info">加入購物車</a>
-                            <a href="#" class="btn btn-default">下次再買</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
